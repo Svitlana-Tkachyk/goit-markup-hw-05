@@ -114,11 +114,11 @@ gap: 50px;
     color:var(--main-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus{
     color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-active::after {
@@ -170,15 +170,16 @@ gap: 50px;
     padding-bottom: 32px;
     text-decoration: none;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover,
 .header-mail:focus {
     color: #188CE8 ;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-icon {
     margin-right: 10px;
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel {
@@ -191,17 +192,18 @@ gap: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover,
 .header-tel:focus {
     color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-icon {
     margin-right: 10px;
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -254,10 +256,11 @@ gap: 50px;
     border-radius: 4px;
     border-color: #2196F3 ;
     padding: 10px 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-button:hover {
     background-color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -328,9 +331,11 @@ gap: 50px;
     color: #757575;
 }
 /*---ЧИМ МИ ЗАЙМАЄМОСЯ-------*/
+
+
+
 .activity-extent {
     padding-bottom: 94px;
-
 }
 
 .activity-title {
@@ -346,18 +351,11 @@ gap: 50px;
 }
 
 .activity-list {
+    display: flex;
+    gap: 30px;
     width: calc((100%-60px) / 3) ;
     position: relative;
 }
-
-.activity-imgs {
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    }
 
 
 .activity-image {
@@ -384,7 +382,7 @@ gap: 50px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    background-color: rgba(47, 48, 58, 0.8);
+    background-color: rgba(34, 37, 71, 0.8);
     color: #FFFFFF;
     margin: 0;
     padding: 0;
@@ -476,19 +474,18 @@ height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon:focus,
 .team-icon:hover {
     background-color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon:focus .icon-link,
 .team-icon:hover .icon-link {
     fill: #FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .aside-icon {
     display: flex;
@@ -511,7 +508,6 @@ height: 260px;
 .icon-link:focus,
 .icon-link:hover {
     fill: #FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -548,18 +544,17 @@ height: 260px;
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .customers-link:focus,
 .customers-link:hover {
     border-color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:focus .icon-logo,
 .customers-link:hover .icon-logo {
     fill: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
@@ -570,6 +565,7 @@ height: 260px;
     background-size: contain;
     align-items: center;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -627,12 +623,12 @@ element.style {
     color: #FFFFFF;
     text-decoration: none;
     margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list:focus,
 .adress-link:hover {
     color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-mail {
     font-family: var(--main-font);
@@ -643,10 +639,10 @@ element.style {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-mail:hover{
 color: #188CE8;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel {
@@ -658,10 +654,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel:hover{
     color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social {
@@ -696,12 +692,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-icon:focus,
 .title-icon:hover {
     background-color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -720,6 +716,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------Модальне вікно------*/
@@ -811,11 +808,12 @@ padding: 94px 0;
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover {
     background-color: #188CE8;
     color: #FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------- НАШІ ПРОЄКТИ------------*/
@@ -830,12 +828,12 @@ padding: 94px 0;
 
 .projects-link {
     width: calc(100%-60px) / 3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:focus,
 .projects-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:hover .projects-top-text {
